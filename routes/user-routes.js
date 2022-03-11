@@ -14,7 +14,7 @@ const client = new MongoClient(
 
 router.post("/authenticate", (req, res, next) => {
 	//use jwt - jsonwebtoken package to create unique token for indivdual user
-	if (req.body.email && req.body.password) {
+	if (req.body.Email && req.body.Password) {
 		res.status(200).send({
 			result: true,
 			token: "ye7hh-2832ey2-2e7237ey27e-2727272-377whd7whwed",
